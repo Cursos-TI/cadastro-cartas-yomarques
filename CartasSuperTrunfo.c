@@ -39,32 +39,32 @@ int main() {
     printf("Digite o PIB do estado 1: \n");
     scanf("%f", &PIB1);
 
- printf("Densidade Populacional 1 (Quanto menor o valor da densidade maior o poder!): %f habitantes por quilometro quadrado!\n\n", 
-                                                                              densidadepopulacional1 = (float) populacao1 / area1);
- printf("PIB per capita 1: %f\n\n", PIBpercapita1 = (float) PIB1 / populacao1);
+ printf("Densidade Populacional %s (Quanto menor o valor, maior o poder!): %f habitantes por quilômetro quadrado!\n\n", 
+                                     estado1, densidadepopulacional1 = populacao1 / area1);
+ printf("PIB per capita 1: %f\n\n", PIBpercapita1 = PIB1 / populacao1);
 
     //Entrada de dados para a carta 2.
-    printf("Digite o nome do Estado 2: \n");
+    printf("Digite o nome do Estado 2:\n");
     scanf("%s", estado2);
 
-    printf("Digite o nome da Cidade 2: \n");
+    printf("Digite o nome da Cidade 2:\n");
     scanf("%s", cidade2);
 
-    printf("Digite a quantidade de população do estado 2: \n");
+    printf("Digite a quantidade de população do estado 2:\n");
     scanf("%lu", &populacao2);
 
-    printf("Digite a quantidade de pontos turísticos do Estado 2: \n");
+    printf("Digite a quantidade de pontos turísticos do Estado 2:\n");
     scanf("%d", &pontosturisticos2);
 
-    printf("Digite a área do estado 2 (em km²): \n");
+    printf("Digite a área do estado 2 (em km²):\n");
     scanf("%f", &area2);
 
-    printf("Digite o PIB do estado 2: \n");
+    printf("Digite o PIB do estado 2:\n");
     scanf("%f", &PIB2);
 
- printf("Densidade Populacional 2 (Quanto menor o valor da densidade maior o poder!): %f habitantes por quilometro quadrado!\n\n", 
-                                                                             densidadepopulacional2 = (float) populacao2 / area2);
- printf("PIB per capita 2: %f\n\n", PIBpercapita2 = (float) PIB2 / populacao2);
+ printf("Densidade Populacional %s (Quanto menor o valor, maior o poder!): %f habitantes por quilômetro quadrado!\n\n", 
+                                     estado2, densidadepopulacional2 = populacao2 / area2);
+ printf("PIB per capita 2: %f\n\n", PIBpercapita2 = PIB2 / populacao2);
 
 //Impressão dos dados cadastrados, carta 01 e carta 02 e cálculo do Super Poder de cada carta.
  printf("Estado 1: %s - Cidade 1: %s\n", estado1, cidade1);
@@ -99,7 +99,7 @@ printf("O estado 1 (%s) tem um PIB per capita maior que o estado 2 (%s)? %d\n\n"
 printf("O estado 1 (%s) tem uma área maior que o estado 2 (%s)? %d\n\n", estado1, estado2, area1 > area2);
 printf("O estado 1 (%s) tem um número maior de habitantes que o estado 2 (%s)? %d\n\n", estado1, estado2, populacao1 > populacao2);
 
-if (estado1 > estado2) {
+if (populacao1 > populacao2) {
     printf("O estado 1 (%s) é o vencedor!\n", estado1);
 } else {
     printf("O estado 1 (%s) é o perdedor!\n", estado1);
