@@ -150,6 +150,7 @@ switch (EscolhaJogador) {
         break;
     case 3:
         printf("Você escolheu comparar a Densidade Populacional!\n");
+        printf("Lembre-se, quanto menor a densidade populacional, maior o poder!\n");
         if (densidadepopulacional1 < densidadepopulacional2) {
             printf("O estado (%s) é o vencedor!\n", estado1);
             printf("Densidade Populacional do estado (%s): %.2f habitantes por km²\n", estado1, densidadepopulacional1);
